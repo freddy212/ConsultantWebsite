@@ -30,8 +30,6 @@ export default function Simple() {
         >
           <Link href="/">Home</Link>
           <Link href={"/tutorials"}>Tutorials</Link>
-          <Link href={"#"}>Blog</Link>
-          <Link href={"#"}>Contact</Link>
         </HStack>
       </Flex>
     </Box>

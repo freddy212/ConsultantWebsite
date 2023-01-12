@@ -7,11 +7,17 @@ import {
   SimpleGrid,
   VStack,
   Heading,
+  Box,
 } from "@chakra-ui/react";
 
 export const TechnologyBox = () => {
   return (
-    <Container bg={useColorModeValue("gray.200", "gray.900")} px={4} mt="2rem">
+    <Box
+      bg={useColorModeValue("gray.200", "gray.900")}
+      px={4}
+      mt="2rem"
+      w="100%"
+    >
       <Heading fontSize={"6xl"} textAlign="center">
         {" "}
         Technologies i use{" "}
@@ -79,6 +85,6 @@ export const TechnologyBox = () => {
           </Text>
         </VStack>
       </SimpleGrid>
-    </Container>
+    </Box>
   );
 };

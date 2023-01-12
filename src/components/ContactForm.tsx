@@ -51,6 +51,7 @@ export const ContactForm = () => {
   };
   return (
     <Container maxW="full" mt={0} centerContent overflow="hidden">
+      <Heading mt="2rem">Contact me below</Heading>
       <Flex>
         <Box
           bg="#02054B"
@@ -78,7 +79,7 @@ export const ContactForm = () => {
                       <HStack alignItems="center">
                         <MdEmail color="#1970F1" size="20px" />
                         <Text fontSize="md" fontWeight={"bold"}>
-                          frederikconsulting@gmail.com
+                          frederikbjornconsulting@gmail.com
                         </Text>
                       </HStack>
                       <HStack alignItems="center">

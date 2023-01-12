@@ -38,7 +38,7 @@ const Feature = ({ text, iconBg }: FeatureProps) => {
 
 export const HomePage = () => {
   return (
-    <Container maxW={"5xl"} py={12}>
+    <Container maxW={"6xl"} py={12}>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
           <Heading>Frederik Bjørn Groben Nielsen</Heading>
@@ -67,18 +67,19 @@ export const HomePage = () => {
             />
           </Stack>
         </Stack>
-        <Flex>
+        <Flex justifyContent="end">
           <Image
             rounded={"md"}
             alt={"feature image"}
-            src={
-              "https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-            }
+            src={"/billede.jpg"}
             objectFit={"cover"}
           />
         </Flex>
       </SimpleGrid>
       <TechnologyBox />
+      <Heading textAlign={"center"} mt="2rem" mb="2rem">
+        Lets find out how i can help you and your business!
+      </Heading>
       <ContactForm />
     </Container>
   );
