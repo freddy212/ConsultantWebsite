@@ -35,9 +35,6 @@ const MobDevTypicalTasks = () => {
             Developing cross-platform applications using React Native
           </ListItem>
           <ListItem>
-            Implementing push notifications and other real-time features
-          </ListItem>
-          <ListItem>
             Debugging and resolving application crashes and performance issues
           </ListItem>
         </UnorderedList>

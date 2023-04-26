@@ -37,9 +37,6 @@ const BlockchainTypicalTasks = () => {
           <ListItem>
             Debugging and resolving issues with smart contracts and dApps
           </ListItem>
-          <ListItem>
-            Optimizing blockchain applications for performance and scalability
-          </ListItem>
         </UnorderedList>
       </VStack>
     </Box>
