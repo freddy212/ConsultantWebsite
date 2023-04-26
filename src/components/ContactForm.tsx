@@ -21,6 +21,7 @@ import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
 import React, { useState } from "react";
 import { send } from "emailjs-com";
+import { useToast } from "@chakra-ui/react";
 
 export const ContactForm = () => {
   /*const [toSend, setToSend] = useState({
@@ -30,9 +31,9 @@ export const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const toast = useToast();
 
   const onSubmit = (e: React.SyntheticEvent) => {
-    alert("hello");
     e.preventDefault();
     send(
       "service_p03z478",
@@ -41,13 +42,21 @@ export const ContactForm = () => {
       "6JkXpmnGYvcgFkXRK"
     )
       .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
+        setName("");
+        setEmail("");
+        setMessage("");
+
+        toast({
+          title: "Message sent",
+          description: "The message was successfully sent",
+          status: "success",
+          duration: 5000,
+          isClosable: true,
+        });
       })
       .catch((err) => {
         console.log("FAILED...", err);
       });
-
-    alert("success!");
   };
   return (
     <Container maxW="full" mt={0} centerContent overflow="hidden">
@@ -110,6 +119,7 @@ export const ContactForm = () => {
                               onChange={(event) =>
                                 setName(event.currentTarget.value)
                               }
+                              value={name}
                             />
                           </InputGroup>
                         </FormControl>
@@ -126,6 +136,7 @@ export const ContactForm = () => {
                               onChange={(event) =>
                                 setEmail(event.currentTarget.value)
                               }
+                              value={email}
                             />
                           </InputGroup>
                         </FormControl>
@@ -140,6 +151,7 @@ export const ContactForm = () => {
                             onChange={(event) =>
                               setMessage(event.currentTarget.value)
                             }
+                            value={message}
                           />
                         </FormControl>
                         <FormControl id="name" float="right">

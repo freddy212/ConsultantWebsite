@@ -9,10 +9,13 @@ import {
   StackDivider,
   Icon,
   useColorModeValue,
+  Box,
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
 import { ContactForm } from "../components/ContactForm";
+import { Pricing } from "../components/Pricing";
 import { TechnologyBox } from "../components/TechnologyBox";
+import CVBar from "../components/CVBar";
 
 interface FeatureProps {
   text: string;
@@ -39,12 +42,13 @@ const Feature = ({ text, iconBg }: FeatureProps) => {
 export const HomePage = () => {
   return (
     <Container maxW={"6xl"} py={12}>
+      <Heading>Frederik Bjørn Groben Nielsen</Heading>
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-        <Stack spacing={4}>
-          <Heading>Frederik Bjørn Groben Nielsen</Heading>
-          <Text color={"gray.500"} fontSize={"lg"}>
+        <Stack spacing={4} justifyContent={["center", null]}>
+          <Heading color={"blackAlpha.600"}>
+            {" "}
             Software Consultant for hire!
-          </Text>
+          </Heading>
           <Stack
             spacing={4}
             divider={
@@ -58,29 +62,21 @@ export const HomePage = () => {
               text={"Software Development"}
             />
             <Feature
+              iconBg={useColorModeValue("purple.100", "purple.900")}
+              text={"Mobile Development"}
+            />
+            <Feature
               iconBg={useColorModeValue("green.100", "green.900")}
               text={"Blockchain Development"}
             />
-            <Feature
-              iconBg={useColorModeValue("purple.100", "purple.900")}
-              text={"Programming Tutoring"}
-            />
           </Stack>
         </Stack>
-        <Flex justifyContent="end">
-          <Image
-            rounded={"md"}
-            alt={"feature image"}
-            src={"/billede.jpg"}
-            objectFit={"cover"}
-          />
-        </Flex>
+        <Box justifySelf={["center", "end"]}>
+          <Image rounded={"md"} alt={"feature image"} src={"/billede.jpg"} />
+        </Box>
       </SimpleGrid>
+      <CVBar />
       <TechnologyBox />
-      <Heading textAlign={"center"} mt="2rem" mb="2rem">
-        Lets find out how i can help you and your business!
-      </Heading>
-      <ContactForm />
     </Container>
   );
 };
