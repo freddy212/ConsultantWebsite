@@ -31,9 +31,9 @@ const theme = extendTheme({ breakpoints });
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Navbar />
     <Box fontSize="xl" bg="gray.100">
       <BrowserRouter>
+        <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="tutorials" element={<Tutorials />} />
