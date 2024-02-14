@@ -9,7 +9,7 @@ const CVBar = () => {
   return (
     <Center>
       <Link
-        href="https://gateway.pinata.cloud/ipfs/QmdCXLYUvgNEcwN2r77cTX3MaBuzkkqqLpTLx4rCLbXcCC"
+        href="https://gateway.pinata.cloud/ipfs/QmTTbwU3H2YX4uedWS8XHxTD6aYoqPkymcjTqxHwLpEMpX"
         target="_blank"
         rel="noreferrer"
       >

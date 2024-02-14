@@ -33,6 +33,7 @@ const SocialButton = ({
       alignItems={"center"}
       justifyContent={"center"}
       transition={"background 0.3s ease"}
+      target="_blank"
       _hover={{
         bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
       }}
@@ -66,7 +67,7 @@ export default function SmallCentered() {
           <Text>© 2023 Frederik Bjørn. All rights reserved</Text>
           <Stack direction={"row"} spacing={6}>
             <Link
-              href="https://gateway.pinata.cloud/ipfs/QmdCXLYUvgNEcwN2r77cTX3MaBuzkkqqLpTLx4rCLbXcCC"
+              href="https://gateway.pinata.cloud/ipfs/QmTTbwU3H2YX4uedWS8XHxTD6aYoqPkymcjTqxHwLpEMpX"
               target="_blank"
               rel="noreferrer"
             >
@@ -74,7 +75,9 @@ export default function SmallCentered() {
             </Link>
             <SocialButton
               label={"YouTube"}
-              href={"https://www.linkedin.com/in/frederik-nielsen-a78884139/"}
+              href={
+                "https://www.linkedin.com/in/frederik-bj%C3%B8rn-groben-nielsen-a78884139/"
+              }
             >
               <FaLinkedin />
             </SocialButton>

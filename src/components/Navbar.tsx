@@ -3,7 +3,6 @@ import {
   Box,
   Flex,
   HStack,
-  Link,
   Text,
   IconButton,
   useBreakpointValue,
@@ -11,9 +10,12 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Link,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useLocation } from "react-router-dom";
+import { Link as ChakraLink } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 
 export default function Simple() {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -37,8 +39,8 @@ export default function Simple() {
             />
             <MenuList>
               <MenuItem
-                as={Link}
-                href="/"
+                as={RouterLink}
+                to="/"
                 sx={{
                   "&:focus": { bg: menuItemBgColor("/") },
                 }}
@@ -46,22 +48,29 @@ export default function Simple() {
                 Home
               </MenuItem>
               <MenuItem
-                as={Link}
-                href="/fullstack"
+                as={RouterLink}
+                to="/tutorials"
+                bg={menuItemBgColor("/tutorials")}
+              >
+                Tutorials
+              </MenuItem>
+              <MenuItem
+                as={RouterLink}
+                to="/fullstack"
                 bg={menuItemBgColor("/fullstack")}
               >
                 Full Stack
               </MenuItem>
               <MenuItem
-                as={Link}
-                href="/mobile"
+                as={RouterLink}
+                to="/mobile"
                 bg={menuItemBgColor("/mobile")}
               >
                 Mobile Development
               </MenuItem>
               <MenuItem
-                as={Link}
-                href="/blockchain"
+                as={RouterLink}
+                to="/blockchain"
                 bg={menuItemBgColor("/blockchain")}
               >
                 Blockchain
@@ -74,20 +83,20 @@ export default function Simple() {
             w="100%"
             justify={"center"}
           >
-            <Link href="/">
+            <Link as={RouterLink} to="/">
               <Text fontSize={{ base: "md", md: "xl", lg: "3xl" }}>Home</Text>
             </Link>
-            <Link href="/fullstack">
+            <Link as={RouterLink} to="/fullstack">
               <Text fontSize={{ base: "md", md: "xl", lg: "3xl" }}>
                 Full Stack Development
               </Text>
             </Link>
-            <Link href="/mobile">
+            <Link as={RouterLink} to="/mobile">
               <Text fontSize={{ base: "md", md: "xl", lg: "3xl" }}>
                 Mobile Development
               </Text>
             </Link>
-            <Link href="/blockchain">
+            <Link as={RouterLink} to="/blockchain">
               <Text fontSize={{ base: "md", md: "xl", lg: "3xl" }}>
                 Blockchain Development
               </Text>

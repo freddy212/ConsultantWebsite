@@ -72,7 +72,11 @@ export const HomePage = () => {
           </Stack>
         </Stack>
         <Box justifySelf={["center", "end"]}>
-          <Image rounded={"md"} alt={"feature image"} src={"/billede.jpg"} />
+          <Image
+            rounded={"md"}
+            alt={"feature image"}
+            src={`${process.env.PUBLIC_URL}/billede.jpg`}
+          />
         </Box>
       </SimpleGrid>
       <CVBar />

@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { BorderProps } from "@chakra-ui/react";
 import { TechnologyBoxContent } from "./TechnologyBoxContent";
+import { Link as RouterLink } from "react-router-dom";
 
 export const TechnologyBox = () => {
   return (
@@ -28,7 +29,8 @@ export const TechnologyBox = () => {
         paddingBottom="2rem"
       >
         <Link
-          href={"/fullstack"}
+          as={RouterLink}
+          to={"/fullstack"}
           textDecoration={"none"}
           _hover={{ textDecoration: "none" }}
         >
@@ -47,7 +49,8 @@ export const TechnologyBox = () => {
           </TechnologyBoxContent>
         </Link>
         <Link
-          href={"/mobile"}
+          as={RouterLink}
+          to={"/mobile"}
           textDecoration={"none"}
           _hover={{ textDecoration: "none" }}
         >
@@ -66,7 +69,8 @@ export const TechnologyBox = () => {
           </TechnologyBoxContent>
         </Link>
         <Link
-          href={"/blockchain"}
+          as={RouterLink}
+          to={"/blockchain"}
           textDecoration={"none"}
           _hover={{ textDecoration: "none" }}
         >
@@ -84,11 +88,6 @@ export const TechnologyBox = () => {
             </VStack>
           </TechnologyBoxContent>
         </Link>
-        <Link
-          href={"/tutorials"}
-          textDecoration={"none"}
-          _hover={{ textDecoration: "none" }}
-        ></Link>
       </SimpleGrid>
     </Box>
   );
