@@ -88,21 +88,7 @@ export const TechnologyBox = () => {
           href={"/tutorials"}
           textDecoration={"none"}
           _hover={{ textDecoration: "none" }}
-        >
-          <TechnologyBoxContent
-            borderProps={{
-              border: "8px",
-              borderColor: "blue.100",
-            }}
-          >
-            <Heading>Tutorials!</Heading>
-            <VStack>
-              <Text fontSize={"4xl"}>University</Text>
-              <Text fontSize={"3xl"}>Gymnasium</Text>
-              <Text fontSize={"2xl"}>Curious Souls</Text>
-            </VStack>
-          </TechnologyBoxContent>
-        </Link>
+        ></Link>
       </SimpleGrid>
     </Box>
   );

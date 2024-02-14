@@ -99,11 +99,6 @@ export default function Simple() {
                 Blockchain Development
               </Text>
             </Link>
-            <Link href="/tutorials">
-              <Text fontSize={{ base: "md", md: "xl", lg: "3xl" }}>
-                Tutorials
-              </Text>
-            </Link>
           </HStack>
         )}
       </Flex>
