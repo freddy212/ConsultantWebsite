@@ -62,7 +62,7 @@ export const HomePage = () => {
               text={"Software Development"}
             />
             <Feature
-              iconBg={useColorModeValue("purple.100", "purple.900")}
+              iconBg={useColorModeValue("red.100", "red.900")}
               text={"Mobile Development"}
             />
             <Feature

@@ -47,13 +47,6 @@ export default function Simple() {
               </MenuItem>
               <MenuItem
                 as={Link}
-                href="/tutorials"
-                bg={menuItemBgColor("/tutorials")}
-              >
-                Tutorials
-              </MenuItem>
-              <MenuItem
-                as={Link}
                 href="/fullstack"
                 bg={menuItemBgColor("/fullstack")}
               >
