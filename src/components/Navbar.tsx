@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Box,
   Flex,
@@ -14,7 +13,6 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { useLocation } from "react-router-dom";
-import { Link as ChakraLink } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
 export default function Simple() {
@@ -46,13 +44,6 @@ export default function Simple() {
                 }}
               >
                 Home
-              </MenuItem>
-              <MenuItem
-                as={RouterLink}
-                to="/tutorials"
-                bg={menuItemBgColor("/tutorials")}
-              >
-                Tutorials
               </MenuItem>
               <MenuItem
                 as={RouterLink}

@@ -40,7 +40,7 @@ export const TechnologyBox = () => {
               borderColor: useColorModeValue("yellow.100", "yellow.900"),
             }}
           >
-            <Heading>Full Stack Development!</Heading>
+            <Heading textAlign={"center"}>Full Stack Development!</Heading>
             <VStack>
               <Text fontSize={"4xl"}>Kotlin</Text>
               <Text fontSize={"3xl"}>Java</Text>
@@ -60,7 +60,7 @@ export const TechnologyBox = () => {
               borderColor: "red.100",
             }}
           >
-            <Heading>Mobile development!</Heading>
+            <Heading textAlign={"center"}>Mobile development!</Heading>
             <VStack>
               <Text fontSize={"4xl"}>Android</Text>
               <Text fontSize={"3xl"}>React Native</Text>
@@ -80,7 +80,7 @@ export const TechnologyBox = () => {
               borderColor: useColorModeValue("green.100", "green.900"),
             }}
           >
-            <Heading>Blockchain Development!</Heading>
+            <Heading textAlign={"center"}>Blockchain Development!</Heading>
             <VStack>
               <Text fontSize={"4xl"}>Algorand</Text>
               <Text fontSize={"3xl"}>IPFS</Text>
